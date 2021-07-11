@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <header>
+        
+        
+        <meta charset = "utf-8">
+        <title> Home </title>
+        <link rel= "stylesheet" ; href = '/css/style.css'>
+        <link rel="stylesheet"; href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <section class="cabecera">
+            <section class= "arriba-de-todo">
+                <img src= 'images/logo-mercado.svg'width="300px" ; height="100px" ></img>
+                <p class= 'navbar'><input type = 'search' placeholder = 'Buscar productos,marcas'style = 'width:250px ; height:30px'>
+                 <button id = 'boton'> <i class= 'fas fa-search'></i> </button>
+                </p>
+            
+                <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito </p>   
+
+            </section>
+
+
+            <section class="nav-bar">
+                <ul class= 'items-1'>
+                    <li>Ofertas</li> 
+                    <li>Tiendas oficiales</li> 
+                    <li>Vender</li> 
+                    <li>Ayuda</li> 
+                </ul>
+
+                
+                <ul class = 'items-2'>
+                    <li>Crear tu cuenta <i class="far fa-address-card"></i> </li> 
+                    <li>Ingresa <i class="fas fa-sign-in-alt"></i> </li> 
+                    <li>Mis compras <i class="fas fa-shopping-basket"></i></li> 
+                </ul>
+            
+            </section>
+        
+            <button class="burger-menu"> <i class="fas fa-bars"></i> </button>
+        
+        
+        </section>    
+
+    
+    </header>
+    <main class= "main-register">
+
+        <section class= "form-signup">
+    
+            <form action= "/register.html" method="POST">
+              
+                <div class= 'title-form'>Registro</div>
+
+                <div class="nombrelogin">
+                    <label for="name"></label>
+                    <input type="text" name= "name" id= "name" autofocus= 1 placeholder="Nombre y Apellido" required > 
+                </div>
+                
+                <div class="nombreusuario">
+                    <label for="name"></label>
+                    <input type="text" name= "name usuario" id= "name usuario" autofocus= 1 placeholder="Nombre de usuario" required> 
+                </div>
+
+                <div class="emaillogin">
+                    <label for="email"></label>
+                    <input type="email" name= "email" id= "email" autofocus= 1 placeholder="Correo electronico" aria-required="true" aria-describedat="form-email.error" data-missing-error="El campo es requerido." required>
+                    <div class="invalid-feedback" id="form-email-error"></div>
+                </div>
+        
+                <div class="fechanacimiento">
+                        <div class= "title-form"><label for="start" class="fecha-nacimiento">Fecha de nacimiento:</label> </div>
+                        <div><input type="date" id="start" name="trip-start" value="aaaa-mm-dd" min="1900-01-01" max="2023-12-31"></div>
+                </div>
+
+                <div class="direccion">
+                    <label for="adress"></label>
+                    <input type="text" name= "direccion" id= "direccion" autofocus= 1 placeholder="Domicilio" required> 
+                </div>
+        
+                <div class="passwordlogin">
+                    <label for="name"></label>
+                    <input type="password" name= "password" id= "password" autofocus= 1 placeholder="Contraseña" required>
+                </div>
+
+                <div class="passwordlogin">
+                    <label for="name"></label>
+                    <input type="password" name= "password" id= "password" autofocus= 1 placeholder="Repetir contraseña" required>
+                </div>
+                
+
+                <div class= title-form>Perfil del comprador</div>
+                <input type="radio" name="perfil" value="Comprador" class= "categorias">Comprador  </input>
+                <input type="radio" name="perfil" value="Vendedor" class= "categorias">Vendedor  </input>
+
+                <br></br>
+
+                <div class= title-form><label for = "interes" > Categorías de interés </label></div>
+                    <div>
+                        <ul class=intereses> 
+                            <li><input type="checkbox" name="intereses" value="Electro"> Electro </input></li>
+                            <li><input type="checkbox" name="intereses" value="Moda"> Moda</input></li>
+                            <li><input type="checkbox" name="intereses" value="Hogar"> Hogar </input></li>
+                            <li><input type="checkbox" name="jugueteria" value="Juguetes"> Jugueteria </input></li>
+                            <li><input type="checkbox" name="intereses" value="VidaSana"> Vida sana </input></li>
+                        </ul>
+                    </div>
+
+                </div> 
+            
+                <button type="submit" class="buttonlogin">Enviar</button>
+                
+            
+            </form>
+            
+        </section>
+    
+    </main>
+
+ 
+</body>
+
+</html>

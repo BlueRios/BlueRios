@@ -1,15 +1,14 @@
-const { SSL_OP_SINGLE_DH_USE } = require('constants');
 const express = require('express');
+const app = express();
 const path = require('path');
 
-const app = express();
-
-app.get('/', (req,res) =>{
-    res.sendFile(path.join(__dirname, './views/index.html')); 
- });
- 
- app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.join(__dirname, './public')));
+app.use(express.static(path.join(__dirname, './views')));
 
 app.listen(3000, () => {
-    console.log("Servidor corriendo");
+  console.log('Corriendo puerto 3000');
+});
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './views/index.html'));
 });
