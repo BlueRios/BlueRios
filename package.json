@@ -3,3 +3,14 @@
     "express": "^4.17.1"
   }
 }
+ 
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  }
+}
+"engines": {
+    "node": "8.9.3"
+  }
+
+ 
