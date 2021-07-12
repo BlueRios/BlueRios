@@ -6,14 +6,19 @@
     text-align: center;
 }
 
-
 body{
     font-family: 'Roboto';
     padding: 0%;
     margin: 0;
     width: 100%;
-
 }
+
+.main-index{
+    width: 80%;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
 
 article{
     font-family: 'Roboto';
@@ -123,6 +128,13 @@ footer{
 
 @media(max-width:769px){
 
+    .arriba-de-todo{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
     .items-1{
         display: none;
     }
@@ -162,10 +174,12 @@ footer{
         text-align: left;
 
     }
+
     .main-register{
         display: flex;
         justify-content: center;
         background-color: #ebebeb;
+        padding: 30px;
     }
     .form-signup{
         display: flex;
@@ -173,8 +187,8 @@ footer{
         justify-content: center;
         background-color:#ebebeb;
         text-align: center;
-        border: solid 1px gray;
-        width: 50%;
+       
+    
     }
 
     .form-signup input{
@@ -196,22 +210,18 @@ footer{
         text-align: center;
         color: white;
         background-color: cornflowerblue;
-        border: solid 3px cornflowerblue;
+        border: solid 10px cornflowerblue;
+        border-radius: 5px;
     }
 
-    .footer-description{
-        display: flex;
-        flex-direction: column;
-    }
 
     .form-login{
-        display: flex;
+        display: in;
         padding: 15px;
         justify-content: center;
         flex-direction: column;
         background-color:#ebebeb;
         text-align: center;
-        width: 50%;
 
     }
 
@@ -230,8 +240,18 @@ footer{
         padding-top: 10px;
         color: #03264C;
     }
-}
 
+    .formularioLogin{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-description{
+        display: flex;
+        flex-direction: column;
+    }
+
+}   
 @media (min-width: 769px){
     .arriba-de-todo{
         display: flex;
@@ -245,25 +265,27 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+
+    .nav-bar ul{
+        padding: none;
+    }
+
     .items-1{
         display: flex;
         list-style:none;
-        justify-content: space-around;
-        align-items: center;
     }
 
     .items-2{
         display: flex;
         list-style:none;
-        align-items: center;
     }
 
     .items-1 li{
-        margin: 15px;
+        margin: 10px;
     }
 
     .items-2 li{
-        margin: 15px;
+        margin: 10px;
     }
 
     .burger-menu{
@@ -274,24 +296,92 @@ footer{
         display: flex;
         justify-content: space-between;
         flex-direction:row;
-        box-sizing: border-box;
-        position: relative;
     }
 
     .seccion2{
         display: flex;
         justify-content: space-between;
         flex-direction:row;
-        box-sizing: border-box;
     }
     
     .articulos-de-venta {
         width: 25%
     }
 
-    main{
-        width: 80%;
+    .main-register{
+        display: flex;
         justify-content: center;
+        background-color: #ebebeb;
+        padding: 30px;
     }
-}
+    .form-signup{
+        display: flex;
+        padding: 15px;
+        justify-content: center;
+        background-color:#ebebeb;
+        text-align: center;
+        border: solid 1px gray;
+        width: 40%;
+        box-shadow: 0px 0px 2px rgb(100, 100, 100);
+    }
 
+    .form-signup input{
+        padding: 15px;
+        margin: 8px;
+        border: solid 3px white;
+        border-radius: 8px;
+    }
+
+
+    .title-form{
+        font-size: 16px;
+        text-align: center;
+        margin: 10px;
+        color: #03264C
+    }
+
+    .buttonlogin{
+        text-align: center;
+        color: white;
+        background-color: cornflowerblue;
+        border: solid 10px cornflowerblue;
+        border-radius: 5px;
+    }
+
+
+    .form-login{
+        display: in;
+        padding: 15px;
+        justify-content: center;
+        flex-direction: column;
+        background-color:#ebebeb;
+        text-align: center;
+
+    }
+
+    .form-login input{
+        padding: 15px;
+        margin: 8px;
+        border: solid 3px white;
+        border-radius: 8px;
+
+    }
+
+    .title-form-login{
+        font-size: 16px;
+        text-align: center;
+        margin: 5px;
+        padding-top: 10px;
+        color: #03264C;
+    }
+
+    .formularioLogin{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intereses li{
+        list-style: none;
+        text-align: left;
+}
+}

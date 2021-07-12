@@ -26,7 +26,7 @@
             </section>
 
 
-            <section class="nav-bar">
+            <nav class="nav-bar">
                 <ul class= 'items-1'>
                     <li>Ofertas</li> 
                     <li>Tiendas oficiales</li> 
@@ -36,12 +36,12 @@
 
                 
                 <ul class = 'items-2'>
-                    <li>Crear tu cuenta <i class="far fa-address-card"></i> </li> 
-                    <li>Ingresa <i class="fas fa-sign-in-alt"></i> </li> 
-                    <li>Mis compras <i class="fas fa-shopping-basket"></i></li> 
+                    <li><a href = "register.html">Crear tu cuenta <i class="far fa-address-card"></i> </a> </li> 
+                    <li><a href = "login.html"> Ingresa <i class="fas fa-sign-in-alt"></i> </a></li> 
+                    <li><a href = " ">Mis compras <i class="fas fa-shopping-basket"></i></a></li> 
                 </ul>
             
-            </section>
+            </nav>
         
             <button class="burger-menu"> <i class="fas fa-bars"></i> </button>
         
@@ -53,21 +53,29 @@
     
 
     <main class="main-register">
-        <form action= "/login.html" method="POST">
-              
+        
+         <form action= "/login.html" method="POST">
+                
             <div class= 'title-form-login'>Iniciar sesión</div>
+                
             <section class= "form-login">
-            <div>
-                <label for="name"></label>
-                <input type="text" name= "name" id= "name" autofocus= 1 placeholder="Nombre y Apellido" required > 
-            </div>
-            
-            <div>
-                <label for="name"></label>
-                <input type="password" name= "password" id= "password" autofocus= 1 placeholder="Contraseña" required>
-            </div>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name= "name" id= "name" autofocus= 1 placeholder="Nombre y Apellido" required > 
+                </div>
+                        
+                <div>
+                    <label for="name"></label>
+                    <input type="password" name= "password" id= "password" autofocus= 1 placeholder="Contraseña" required>
+                </div>
+                <br></br>
+                <button type="submit" class="buttonlogin">Enviar</button>
+
             </section>
+            
         </form>
+
+
     </main>
 
 
